@@ -2,14 +2,21 @@ public class JavaLesson {
 
   public static void main(String[] args) {
   
+    //Definitions
   String[] cities = {"Boston", "Phoenix", "New York City", "Dallas", "Portland"};
   String[] states = {"MA", "AZ", "NY", "TX", "OR"};
-  //String[][] places = {cities, states};
 
-  placesPrint(cities);
+  //Function Calls
+  arrayPrint(cities);
   }
 
-  public static void placesPrint (String[] places) {
+  public static void doubleArrayPrint (String[] cities, String[] states) {
+    String[][] places = {cities, states};
+  }
+
+  public static void arrayPrint (String[] places) {
+    //This method uses different variations on for loops over an array
+    
     //print out all places
   for (int i=0; i<5; i++) { //go through 5 steps: i=0,1,2,3,4
     System.out.println(places[i]);
