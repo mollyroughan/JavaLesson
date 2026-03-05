@@ -24,6 +24,15 @@ for (const index in cities) {
 //Think of this as looping through an array or object and logging the value by increasing the index of the loop each time
 
 
+//b/c essentially looping over indices, can do fun things:
+console.log("\nfor...in with object making one long output:");
+let tutor ="";
+key=0;
+for (key in person) {
+    tutor += (person[key] + ", ");
+}
+
+console.log(tutor);
 
 // --------------------------------------------------------------------------------------------------------
 
