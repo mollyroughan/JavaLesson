@@ -11,6 +11,7 @@ let person = {
 console.log("for...in with object:");
 let key;
 for (key in person) {
+    console.log(key);
     console.log(person[key]);
 }
 
@@ -51,7 +52,7 @@ for (city of cities) {
     console.log(city);
 }
 
-const string = "Hello";
+const string = "Hello World";
 
 console.log("\nfor...of with string:");
 let letter;
@@ -66,3 +67,10 @@ for (letter of string) {
     // with for..in, you interate over some kind of key or index, and then call on values at that index or key
     // with for...of, you interate directly over the values of the interable, so you don't need to call on an another value. 
     
+
+//normal for loop
+let trees = ["oak", "fir","elm", "maple"]
+let i=0;
+for (i = 1; i<4; i++) {
+    console.log(trees[i])
+}
