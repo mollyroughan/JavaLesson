@@ -21,6 +21,7 @@ let cities = ["Boston", "Phoenix", "New York City", "Dallas", "Portland"];
 console.log("\nfor...in with array:");
 let index;
 for (index in cities) {
+    console.log(index) + " ";      // shows index
     console.log(cities[index]);
 }
 
@@ -61,3 +62,7 @@ for (letter of string) {
 //Think of this more as just outputting the values of the array, not looping over them. 
 //This one is much better for arrays (work for strings b/c JS saves strings as arrays of characters in memory!)
 
+//Long story short: 
+    // with for..in, you interate over some kind of key or index, and then call on values at that index or key
+    // with for...of, you interate directly over the values of the interable, so you don't need to call on an another value. 
+    
